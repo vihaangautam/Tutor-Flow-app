@@ -7,10 +7,10 @@ import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.rounded.CurrencyRupee
-import androidx.compose.material.icons.rounded.People
-import androidx.compose.material.icons.rounded.TrendingDown
-import androidx.compose.material.icons.rounded.TrendingUp
+import androidx.compose.material.icons.filled.AccountBalance
+import androidx.compose.material.icons.filled.Group
+import androidx.compose.material.icons.filled.TrendingDown
+import androidx.compose.material.icons.filled.TrendingUp
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
@@ -88,14 +88,14 @@ fun HomeScreen(viewModel: HomeViewModel) {
                     DashboardCard(
                         title = "Expected",
                         value = currencyFormat.format(state.totalExpected),
-                        icon = Icons.Rounded.CurrencyRupee,
+                        icon = Icons.Filled.AccountBalance,
                         color = Primary,
                         modifier = Modifier.weight(1f)
                     )
                     DashboardCard(
                         title = "Collected",
                         value = currencyFormat.format(state.totalCollected),
-                        icon = Icons.Rounded.TrendingUp,
+                        icon = Icons.Filled.TrendingUp,
                         color = Success,
                         modifier = Modifier.weight(1f)
                     )
